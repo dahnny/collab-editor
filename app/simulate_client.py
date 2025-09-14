@@ -11,9 +11,8 @@ engine = sa.create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 
 DOC_ID = "bfea7b38-d10f-4344-8d3c-1a810daf62a5"  # replace with your doc_id
-TOKEN_A = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiZWZkOGMwZTYtZThjNS00MGIzLTk0YTMtYzFlY2NhNTQ5ZWI4IiwiZXhwIjoxNzU3ODgxMzM5fQ.0N7THZcb1gl8Fu5ER6gv_nybEGFBxCDJ5bwggystmsU"  # JWT for user A
-TOKEN_B = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiOGYwZGU1NWMtODU2My00ODg5LTg4NDEtN2Q2M2YzYmQyZTIyIiwiZXhwIjoxNzU3ODgxMzgzfQ.oaGThoaBwxLBaWIJEzJbJjnj_0PLkKjOCQJiZjukmWI"  # JWT for user B
-
+TOKEN_A = "..."  # JWT for user A
+TOKEN_B = "..."  # JWT for user B
 WS_URL_A = f"ws://localhost:8000/ws/{DOC_ID}?token={TOKEN_A}"
 WS_URL_B = f"ws://localhost:8000/ws/{DOC_ID}?token={TOKEN_B}"
 
